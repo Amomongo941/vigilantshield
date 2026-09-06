@@ -280,6 +280,62 @@
     font-size: 0.88rem;
   }
 
+  /* ---------- Data Destruction ---------- */
+
+  .destruction {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--teal);
+    border-radius: 2px;
+    padding: 32px 34px;
+  }
+
+  .destruction h2 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+
+  .destruction > .wrap-inner p {
+    color: var(--text-muted);
+    max-width: 62ch;
+    margin: 0 0 26px;
+  }
+
+  .destruction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 26px;
+  }
+
+  .destruction-item h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: var(--text);
+  }
+
+  .destruction-item p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+
+  .destruction-cta {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+  }
+
+  .destruction-cta .mono {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
   /* ---------- About ---------- */
 
   .about p {
@@ -350,6 +406,7 @@
     <div class="brand">VIGILANT<span>SHIELD</span></div>
     <nav>
       <a href="#services">Services</a>
+      <a href="#data-destruction">Data Destruction</a>
       <a href="#credentials">Credentials</a>
       <a href="#federal">Federal</a>
       <a href="#contact">Contact</a>
@@ -408,6 +465,14 @@
     </div>
 
     <div class="service-row">
+      <div class="service-code mono">DD</div>
+      <div>
+        <h3>Secure data destruction</h3>
+        <p>Certified hard drive and SSD destruction with a signed Certificate of Destruction — see details below.</p>
+      </div>
+    </div>
+
+    <div class="service-row">
       <div class="service-code mono">CO</div>
       <div>
         <h3>General consulting</h3>
@@ -433,6 +498,35 @@
       <span class="cred">AWS Security</span>
     </div>
     <p class="cred-note">Work spans production SOC operations, digital forensics, penetration testing, and cloud security — grounded in day-to-day incident response, not theory.</p>
+  </div>
+</section>
+
+<section id="data-destruction">
+  <div class="wrap">
+    <div class="destruction">
+      <h2>Secure data destruction</h2>
+      <div class="wrap-inner">
+        <p>Certified, on-site hard drive and SSD destruction for organizations that handle sensitive data. Every device is processed with a signed Certificate of Destruction, giving you an audit-ready record for compliance purposes.</p>
+      </div>
+      <div class="destruction-list">
+        <div class="destruction-item">
+          <h4>What's included</h4>
+          <p>Physical destruction via industrial hard drive crusher and SSD adapter, on-site or drop-off, with device serial numbers logged.</p>
+        </div>
+        <div class="destruction-item">
+          <h4>Certificate of Destruction</h4>
+          <p>Signed COD provided for every job — no extra charge — for audit and compliance records.</p>
+        </div>
+        <div class="destruction-item">
+          <h4>Who it's for</h4>
+          <p>Medical practices (HIPAA), law firms, financial offices (GLBA/FACTA), and any organization retiring equipment.</p>
+        </div>
+      </div>
+      <div class="destruction-cta">
+        <a class="btn" href="#contact">Contact for pricing</a>
+        <span class="mono">On-site or drop-off available</span>
+      </div>
+    </div>
   </div>
 </section>
 
